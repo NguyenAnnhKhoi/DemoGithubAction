@@ -1,23 +1,22 @@
 name: Trăm năm trăm cõi người ta, yêu ai thì yêu đừng quá cha là được
 
 on:
-   push:
-    branches: :["main"] #chạy khi có code mới đẩy lên nhănh main
+  push:
+     branches: :["main"] #chạy khi có code mới đẩy lên nhănh main
 
 jobs:
    ngam_loi_thanh_file:
-    runs-on: ubuntu-lasiest # mượn để chạy
+      runs-on: ubuntu-lasiest # mượn để chạy
 
-    steps:
-    - name: Bước 1 Chào kẻ đầu xanh
-      run: echo "Gặp người như ta gặp vợ"
-
-    - name: Bước 2 Yêu là thứ xa xỉ
-      uses: actions/checkout@v6.0.2
-
-
-    - name: Bước 3 Chia như 1 quyển sách
-      run: cat README.md
+      steps:
+          - name: Bước 1 Chào kẻ đầu xanh
+            run: echo "Gặp người như ta gặp vợ"
+      
+          - name: Bước 2 Yêu là thứ xa xỉ
+            uses: actions/checkout@v6.0.2
+      
+          - name: Bước 3 Chia như 1 quyển sách
+            run: cat README.md
 
 
    
