@@ -2,10 +2,10 @@ name: Trăm năm trăm cõi người ta, yêu ai thì yêu đừng quá cha là 
 
 on:
    push:
-    branches: :{"main"} #chạy khi có code mới đẩy lên nhănh main
+    branches: :["main"] #chạy khi có code mới đẩy lên nhănh main
 
 jobs:
-   ngam_loi_thanh_tho:
+   ngam_loi_thanh_file:
     runs-on: ubuntu-lasiest # mượn để chạy
 
     steps:
